@@ -231,8 +231,10 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
             # use history, opponent_history, score, opponent_score
             # to compute your strategy
             if len(opponent_history)==0: #It's the first round: collude
-                return 'b'
+                return 'c'
             if opponent_history[-1]=='c':
+                return 'c'
+            else:
                 return 'b'
             
     
